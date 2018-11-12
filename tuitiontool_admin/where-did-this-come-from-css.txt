@@ -1,0 +1,201 @@
+/***************
+   Stlyes for modifying the format of the taxonomy forms
+***************/
+
+
+
+/* the following 2 sets of styles should apply to all aid type taxonomy terms */
+#edit-field-max-credits,
+#edit-field-credits-year,
+#edit-field-students,
+#edit-field-students-year,
+#edit-field-max-stipend,
+#edit-field-stipends-year{
+    display:inline-block;
+}
+
+#edit-field-credits-year,
+#edit-field-students-year,
+#edit-field-stipends-year{
+    padding-left: 20px;
+}
+
+/* these will need to be added for each aid type
+     UNLESS 
+        .page-admin-structure-taxonomy 
+     works to replace
+        .page-admin-structure-taxonomy-math-add 
+     for all taxonomy pages.
+*/
+
+/*.page-admin-structure-taxonomy-math-add fieldset#edit-path,
+.page-admin-structure-taxonomy-math-add .form-item-description-value,
+.page-admin-structure-taxonomy-math-add fieldset#edit-description-format,
+.page-admin-structure-taxonomy-math-add fieldset#edit-relations{*/
+
+.page-taxonomy-term-edit fieldset#edit-path,
+.page-admin-structure-taxonomy fieldset#edit-path,
+.page-taxonomy-term-edit .form-item-description-value,
+.page-admin-structure-taxonomy .form-item-description-value,
+.page-taxonomy-term-edit fieldset#edit-description-format,
+.page-admin-structure-taxonomy  fieldset#edit-description-format,
+.page-taxonomy-term-edit fieldset#edit-relations,
+.page-admin-structure-taxonomy fieldset#edit-relations{
+    display:none;
+}
+
+.node-math_aid-form .field-name-field-class-role,
+.node-math_aid-form .field-name-field-crn{
+    vertical-align:top;
+    width: 48%;
+    display:inline-block;
+}
+
+.node-math_aid-form .field-name-field-class-role{
+    padding-right: 3%;
+}
+
+.node-math_aid-form .field-name-field-account-number,
+.node-math_aid-form .field-name-field-credits,
+.node-math_aid-form .field-name-field-stipend,
+.node-math_aid-form .field-name-field-effort{
+    display:inline-block;
+    width: 20%;
+    vertical-align:top;
+}
+/*aid type*/
+.node-math_aid-form .field-name-field-aid-type{
+    display:inline-block;
+    width: 25%;
+}
+/*term*/
+.node-math_aid-form .field-name-field-term{
+    display:inline-block;
+    width:10%;
+}
+/*top level (Department info) group*/
+.node-math_aid-form .group-top-level{
+    display: inline-block;
+    width: 60%;
+    margin-left:3%;
+}
+
+.node-math_aid-form fieldset{
+    margin: 0px;
+}
+
+/*LIN*/
+.node-math_aid-form .field-name-field-first-entry{
+    width: 18%;
+    display: inline-block;
+}
+.node-math_aid-form .field-name-field-lin{
+    width: 17%;
+    display:inline-block;
+}
+.node-math_aid-form .student-info{
+    width:60%;
+    margin-left: 3%;
+    display:inline-block;
+}
+
+.node-math_aid-form .student-info:after{
+    clear:both;
+    width:0px;
+    display:table;
+}
+
+.node-math_aid-form .field-name-field-tuition-mod{
+    display:none;
+}
+
+.node-math_aid-form .field-name-field-pay-periods{
+    display:inline-block;
+    width: 20%;
+}
+
+.node-math_aid-form .group-crn{
+    margin-bottom: 15px;
+}
+    
+.node-math_aid-form .field-name-field-aid-date{
+    display: inline-block;
+    width: 48%;
+}
+
+.node-math_aid-form .field-name-body{
+    display:inline-block;
+    width: 48%;
+    margin-left: 3%;
+}
+
+.node-math_aid-form input#edit-field-aid-date-und-0-value-date,
+.node-math_aid-form input#edit-field-aid-date-und-0-value2-date{
+    width: 100%;
+}
+
+
+.node-math_aid-form .field-name-field-aid-date .start-date-wrapper .form-item-field-aid-date-und-0-value-date,
+.node-math_aid-form .field-name-field-aid-date .end-date-wrapper .form-item-field-aid-date-und-0-value2-date{
+    width: 150px;
+}
+
+.node-math_aid-form .field-name-field-aid-date .start-date-wrapper,
+.node-math_aid-form .field-name-field-aid-date .end-date-wrapper{
+    display: inline-block;
+    width: 50%;
+    vertical-align: bottom;
+}
+
+.node-math_aid_type-form .field-name-field-cost-per-credit,
+.node-math_aid_type-form .field-name-field-credits-year,
+.node-math_aid_type-form .field-name-field-calc-tuition,
+.node-math_aid_type-form .field-name-field-stipends-year,
+.node-math_aid_type-form .field-name-field-students-year{
+    display:inline-block;
+    width: 18%;
+    vertical-align:top;
+    text-align:center;
+}
+
+/* Don't display the weird message above the calculated field*/
+#edit-field-calculated-tuition .messages.status{
+    display:none;
+}
+    
+.node-math_aid_type-form .field-name-field-cost-per-credit label,
+.node-math_aid_type-form .field-name-field-credits-year label,
+.node-math_aid_type-form .field-name-field-calc-tuition label,
+.node-math_aid_type-form .field-name-field-stipends-year label,
+.node-math_aid_type-form .field-name-field-students-year label{
+    font-size: 17px;
+}
+
+/* Hide row weights, the link for hiding/showing row weights and the drag-and drop option*/
+
+.node-math_aid-form .group-crn .tabledrag-toggle-weight-wrapper,
+.node-math_aid-form .group-crn .field-multiple-drag,
+.node-math_aid-form .group-crn .tabledrag-hide{
+    display:none;
+}
+
+.node-math_aid-form .group-crn td{
+    border-right: 1px solid #bebfb9;
+}
+
+/* Styles for Tuition tool admin pages. */
+
+
+h4.enroll-response{
+   position: absolute;
+   bottom: 50px;
+}
+
+.tuitool-admin-set-default{
+    margin-top: 40px;
+}
+
+.tuitool-admin-set-default label{
+    font-size: 18px;
+}
+    
