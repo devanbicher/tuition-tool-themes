@@ -1264,3 +1264,9 @@ h4.enroll-response{
 }
 
 */
+
+/* fix a little issue with buttons not moving to the left in views, this style is specified in seven specific stlye in views styling */
+.views-display-top ul.secondary {
+    background-color: transparent;
+    float: left;
+}
